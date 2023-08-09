@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*styling for the body attribute and classes used in body*/
+body {
+  background-color: #a2a2c8;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/*for classes created, use <.className>{} else <attribute>{}*/
+.topnav {
+  background-color: #a2c8c8;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 2.5px;
+}
+
+.topnavpad {
+  background-color: #a2c8a2;
+  padding: 5px;
+}
+
+/*for styling pathways of classes, we do not need to add the dot (.topnav a/ .topnav a p)*/
+.branding {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.branding img {
+  transform: translate3d(20px, 10px, 0px);
+  height: 150px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.branding img:hover {
+  cursor: pointer;
+}
+
+.branding p {
+  transform: translate3d(-20px, 40px, 0px);
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #a2a2c8;
+}
+
+.branding p:hover {
+  cursor: pointer;
+}
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: navy;
+}
+
+.navigationBarClearButton {
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: #a2a2c8;
+  transform: translateY(-12px);
+}
+
+/*for styling actual classes, we need to add the dot*/
+.search-container {
+  float: right;
+  box-sizing: border-box;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.search-container form {
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  transform: translateX(80px);
+  box-sizing: border-box;
+  gap: 5px;
+  background-color: #a2a2c8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 85%;
+}
+
+.search-container form input {
+  height: 100%;
+  width: 100%;
+  font-size: 15 px system-ui;
+  color: #000;
+  background-color: darkgrey;
+  padding: 4px 9px;
+  border: 2px solid #1b2d1b;
+}
+
+.search-container form input:hover {
+  background-color: rgba(133, 112, 163, 0.289);
+}
+
+.search-container .search-button {
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.text-bg-restaurant {
+  color: #fff;
+  background-color: #8d8d8d;
+  padding: 0.25em;
+  margin-left: 4px;
+}
+
+.text-bg-location {
+  color: #fff;
+  background-color: #22828a;
+  padding: 0.25em;
+  margin-left: 4px;
+}
+
+.text-bg-menu {
+  color: #fff;
+  background-color: #8256b1;
+  padding: 0.25em;
+  margin-left: 4px;
+}
+
+.text-bg-ratings {
+  color: #fff;
+  background-color: #1e2c45;
+  padding: 0.25em;
+  margin-left: 4px;
+}
+
+.restaurant {
+  max-height: 200px;
+  max-width: 200px;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.row {
+  float: left;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+
+.column {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #36454f;
+}
+
+.card {
+  /* this contains a h3 and p */
+  border-radius: 10px;
+  height: 310px;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  background-color: #c8a2a2;
+}
+
+.card h3 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card a img {
+  border-radius: 10px;
+  object-fit: contain;
+  padding: 2.5px;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.pagination {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: rgba(221, 221, 221, 0.509);
+  color: navy;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #928ba1;
+  border-radius: 5px;
+}
