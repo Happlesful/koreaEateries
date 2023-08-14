@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./w3-styles.css" />
     <link rel="stylesheet" href="./bootstrap-styles.css" />
+    <link rel="stylesheet" href="./foodIndex.css" />
 
     <!--Setting the name and icon of the tab region-->
     <title>한국 맛집</title>
@@ -25,46 +26,60 @@
           />
           <p id="branding-logo-title">한국 맛집.zip</p>
         </a>
-        <div class="search-container">
-          <form id="form">
-            <input
-              type="search"
-              id="query-restaurant"
-              placeholder="Restaurant..."
-            />
-            <input
-              type="search"
-              id="query-location"
-              placeholder="Location..."
-            />
-            <input type="search" id="query-menu" placeholder="Menu..." />
-            <input type="submit" value="Search" class="search-button" />
-          </form>
-        </div>
-        <!-- using the navbar to select the tags -->
-        <div id="navigationMenuDropdown">
-          <!-- <div class="w3-bar w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <div class="w3-dropdown-hover">
-              <button class="w3-button">Dropdown</button>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-        <!-- showing the tags chosen -->
-        <div id="navigationTag">
-          <!-- <p>Tags: <span class="w3-tag w3-teal">New!</span></p>
-          <span class="badge rounded-pill text-bg-secondary">Info</span> -->
-        </div>
-        <!-- <div id="root"></div> -->
       </div>
     </div>
-    <!-- loading all of the scripts that will be used in the html file -->
-    <script src="./JSfiles/importJS.js"></script>
+
+    <!--Main content-->
+    <div class="backButtonContainer">
+      <button class="backButton" id="backButton">
+        <h5>Back</h5>
+      </button>
+    </div>
+    <div class="foodInfoInst">
+      <p>~ Click on the image to be directed to restaurant's website</p>
+    </div>
+    <div class="foodInfo" id="foodInfo">
+      <!-- <div class="foodInfoBox" id="foodInfoBox">
+        <a
+          href="#Link to website"
+          target="_blank"
+          class="foodInfoBoxLink"
+          id="foodInfoBoxLink"
+          ><img
+            src="#"
+            alt="image of food"
+            class="foodInfoBoxImage"
+            id="foodInfoBoxImage"
+        /></a>
+      </div>
+      <div class="foodInfoBoxText" id="foodInfoBoxText">
+        <h3>Name of food:</h3>
+        <p>NAME</p>
+        <h3>Location of food:</h3>
+        <p>LOCATION</p>
+        <h3>Ratings of food:</h3>
+        <p>RATING</p>
+        <h3>Name of food menu (classification):</h3>
+        <p>CLASS</p>
+        <h3>Expected price of food:</h3>
+        <p>PRICE</p>
+      </div> -->
+    </div>
+
+    <!-- FOR RUNNING THE SERVER IN FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="./JSfiles/firebaseConfig.js"></script>
+
+    <!-- SCRIPTS USED IN THIS HTML -->
+    <script src="./JSfiles/readMatJibData.js"></script>
+    <!-- <script src="JSfiles/writeMatJibData.js"></script> -->
+    <script src="./JSfiles/createFoodIndex.js"></script>
+    <script src="./JSfiles/handleAllSearchIndex.js"></script>
+
+    <!-- FOR RUNNING A REACT COMPONENT IN HTML -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </body>
 </html>

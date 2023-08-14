@@ -17,7 +17,23 @@ function formatRestaurant(item) {
 
   image.src = item.Image;
   link.appendChild(image);
-  link.href = item.URL;
+  link.href =
+    "../foodIndex.html?id=" +
+    `${item.Id}` +
+    "&name=" +
+    `${item.Name}` +
+    "&location=" +
+    `${item.Location}` +
+    "&ratings=" +
+    `${item.Ratings}` +
+    "&menu=" +
+    `${item.Menu}` +
+    "&price=" +
+    `${item.Price}` +
+    "&image=" +
+    `${item.Image}` +
+    "&website=" +
+    `${item.Website}`;
   title.innerHTML = `${item.Name}` + " " + "(" + `${item.Ratings}` + ")";
   loc.innerHTML = `${item.Location}`;
   div_card.appendChild(link);

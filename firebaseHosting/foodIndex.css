@@ -1,0 +1,87 @@
+.backButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-38%);
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 75px;
+  margin-left: 75px;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: #dadab6;
+  color: #00433f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.backButton:hover {
+  background-color: #c4c4b1;
+  color: #0b1354;
+}
+
+.foodInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5px;
+  margin-bottom: 100px;
+}
+
+.foodInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #c7abab;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+
+.foodInfoBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.foodInfoBoxLink {
+  text-decoration: none;
+  color: black;
+}
+
+.foodInfoBoxImage {
+  width: 240px;
+  height: 240px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.foodInfoBoxText {
+  text-align: left;
+  margin: 10px;
+}
+
+.foodInfoInst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transform: translateX(-17%);
+  font-size: 12px;
+}
