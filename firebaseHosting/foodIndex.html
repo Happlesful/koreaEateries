@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Styling the items used in the file-->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./w3-styles.css" />
+    <link rel="stylesheet" href="./bootstrap-styles.css" />
+
+    <!--Setting the name and icon of the tab region-->
+    <title>한국 맛집</title>
+    <link rel="icon" type="image" href="./hanokIcon.png" />
+  </head>
+
+  <body>
+    <!--Top navigation bar-->
+    <div class="topnavpad">
+      <div class="topnav">
+        <a class="branding" id="branding-logo">
+          <img
+            id="branding-logo-image"
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA1MjVfMTg3%2FMDAxNDk1NzIxNjMyMTA4.0XVmi9o0tzMGqldldww08BC6N57xdH9CaBxOnpox9Qkg.bHbcWaeq8-37Sr-CxQY3MUjkiqMiNdNJ_COCi_3GOTMg.JPEG.jejuthefarm%2FattachImage_2474604795.jpeg&type=a340"
+            alt="맛집 logo"
+          />
+          <p id="branding-logo-title">한국 맛집.zip</p>
+        </a>
+        <div class="search-container">
+          <form id="form">
+            <input
+              type="search"
+              id="query-restaurant"
+              placeholder="Restaurant..."
+            />
+            <input
+              type="search"
+              id="query-location"
+              placeholder="Location..."
+            />
+            <input type="search" id="query-menu" placeholder="Menu..." />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+        </div>
+        <!-- using the navbar to select the tags -->
+        <div id="navigationMenuDropdown">
+          <!-- <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">Dropdown</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- showing the tags chosen -->
+        <div id="navigationTag">
+          <!-- <p>Tags: <span class="w3-tag w3-teal">New!</span></p>
+          <span class="badge rounded-pill text-bg-secondary">Info</span> -->
+        </div>
+        <!-- <div id="root"></div> -->
+      </div>
+    </div>
+    <!-- loading all of the scripts that will be used in the html file -->
+    <script src="./JSfiles/importJS.js"></script>
+  </body>
+</html>
