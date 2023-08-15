@@ -111,7 +111,7 @@ function foodIndexing() {
     MenuParm = "Seafood";
   }
   if (MenuParm.includes("샐러드")) {
-    MenuParm = "Salad물";
+    MenuParm = "Salad";
   }
   if (MenuParm.includes("면")) {
     MenuParm = "Noodles";
