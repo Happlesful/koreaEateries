@@ -6,12 +6,11 @@
 
 /*styling for the body attribute and classes used in body*/
 body {
-  background-color: #a2a2c8;
+  background-color: #a6b1e1;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: left;
   box-sizing: border-box;
 }
@@ -24,20 +23,20 @@ p {
 
 /*for classes created, use <.className>{} else <attribute>{}*/
 .topnav {
-  background-color: #a2c8c8;
+  background-color: #a6b1e1;
   box-sizing: border-box;
   overflow: hidden;
   padding: 2.5px;
 }
 
 .topnavpad {
-  background-color: #a2c8a2;
+  background-color: #f4eeff;
   padding: 5px;
 }
 
 /*for styling pathways of classes, we do not need to add the dot (.topnav a/ .topnav a p)*/
 .branding {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -45,7 +44,7 @@ p {
 }
 
 .branding img {
-  transform: translate3d(20px, 10px, 0px);
+  /* transform: translate3d(20px, 10px, 0px); */
   height: 150px;
   align-items: center;
   border-radius: 10px;
@@ -57,13 +56,12 @@ p {
 }
 
 .branding p {
-  transform: translate3d(-20px, 40px, 0px);
+  transform: translateY(-15px);
   font-size: 30px;
-  font-weight: 700;
-  color: white;
+  font-weight: 500;
+  color: #f4eeff;
   text-align: center;
   box-sizing: border-box;
-  background-color: #a2a2c8;
 }
 
 .branding p:hover {
@@ -76,7 +74,7 @@ p {
   padding: 5px 5px;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  background-color: #a2a2c8;
+  background-color: #dcd6f7;
   transform: translateY(-12px);
 }
 
@@ -101,7 +99,7 @@ p {
   transform: translateX(80px);
   box-sizing: border-box;
   gap: 5px;
-  background-color: #a2a2c8;
+  background-color: #dcd6f7;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 85%;
 }
@@ -113,7 +111,7 @@ p {
   color: #000;
   background-color: darkgrey;
   padding: 4px 9px;
-  border: 2px solid #1b2d1b;
+  border: 2px solid #424874;
 }
 
 .search-container form input:hover {
@@ -173,8 +171,8 @@ p {
 
 .column {
   padding: 5px;
-  border-radius: 5px;
-  background-color: #36454f;
+  border-radius: 10px;
+  background-color: #f4eeff;
   transition: 0.3s;
 }
 
@@ -203,7 +201,7 @@ p {
   padding: 10px 10px;
   text-align: center;
   text-overflow: ellipsis;
-  background-color: #c8a2a2;
+  background-color: #a6b1e1;
 }
 
 .card h3 {
@@ -249,15 +247,17 @@ p {
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
+  color: #f4eeff;
 }
 
 .pagination a.active {
-  background-color: rgba(221, 221, 221, 0.509);
-  color: navy;
+  background-color: #424874;
+  color: white;
   border-radius: 5px;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #928ba1;
+  background-color: #dcd6f7;
+  color: navy;
   border-radius: 5px;
 }

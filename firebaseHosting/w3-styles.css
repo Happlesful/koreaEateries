@@ -26,7 +26,7 @@ img {
   vertical-align: middle;
 }
 a {
-  color: inherit;
+  color: #f4eeff;
 }
 .w3-table,
 .w3-table-all {
@@ -158,45 +158,45 @@ a {
   padding: 9px 0;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #f4eeff;
 }
 .w3-dropddown {
   position: relative;
   display: inline-flex;
   cursor: pointer;
-  background-color: #f4e6bae3;
+  background-color: #f4eeff;
 }
 .w3-dropddown:hover {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  background-color: #f4e6bae3;
+  background-color: #f4eeff;
 }
 .w3-dropdown-click,
 .w3-dropdown-hover {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  background-color: #f4e6bae3;
+  background-color: #dcd6f7;
 }
 .w3-dropdown-hover:hover .w3-dropdown-content {
   display: block;
-  background-color: #f4e6baa3;
+  background-color: #dcd6f7;
 }
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
-  background-color: #f4e6baa3;
+  background-color: #dcd6f7;
   color: #000;
 }
 .w3-dropdown-hover:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child {
-  background-color: #f4e6baa3;
+  background-color: #dcd6f7;
   color: #000;
 }
 .w3-dropdown-content {
   cursor: auto;
   color: #000;
-  background-color: #f4e6baa3;
+  background-color: #dcd6f7;
   display: none;
   position: absolute;
   margin: 0;
@@ -260,7 +260,7 @@ a {
 .w3-bar {
   display: inline-block;
   overflow: hidden;
-  background-color: #ffebc2;
+  background-color: #dcd6f7;
 }
 .w3-center .w3-bar {
   display: inline-block;
